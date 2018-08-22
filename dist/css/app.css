@@ -1,0 +1,96 @@
+/*
+* Designed and created by ScorpioCoding under the MIT license.
+* So enjoy...
+*
+* https://scorpiocoding.net
+*/
+body {
+  background-color: #333; }
+
+.hamburger {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 55px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .hamburger .btn-line {
+    width: 50px;
+    height: 10px;
+    margin: 0 0 10px 0;
+    background-color: #3498db;
+    transition: all 0.5s ease-out; }
+
+.cross {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  transform: rotate(180deg); }
+  .cross .btn-line {
+    width: 50px;
+    height: 10px;
+    margin: 0 0 10px 0;
+    background-color: #3498db;
+    transition: all 0.5s ease-out; }
+    .cross .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .cross .btn-line:nth-child(2) {
+      opacity: 0; }
+    .cross .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(25px, -20px); }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9; }
+  nav .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    background: #262626;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    nav .menu.show {
+      content: '';
+      transform: translate3d(0, 0, 0); }
+  nav .mitem {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    nav .mitem.show {
+      transform: translate3d(0, 0, 0); }
+  nav .mlink {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    nav .mlink:hover {
+      color: #3498db; }
+
+.mitem:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.mitem:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.mitem:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.mitem:nth-child(4) {
+  transition-delay: 0.4s; }

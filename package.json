@@ -1,0 +1,31 @@
+{
+  "name": "dynamichamburgerbutton",
+  "version": "1.0.0",
+  "description": "Dynamic Hamburger Menu Button only using Html5 - Scss - jQuery",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScorpioCoding/DynamicHamburgerButton.git"
+  },
+  "keywords": [
+    "Dynamic",
+    "Hamburger",
+    "Menu",
+    "Button",
+    "Html5",
+    "Scss",
+    "jQuery"
+  ],
+  "author": "ScorpioCoding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScorpioCoding/DynamicHamburgerButton/issues"
+  },
+  "homepage": "https://github.com/ScorpioCoding/DynamicHamburgerButton#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
